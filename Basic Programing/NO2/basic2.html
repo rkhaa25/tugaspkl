@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        var indomie = '3000';
+        var telur = '1500';
+        var kopi = '1000';
+        var susu = '2500';
+        
+        var bindomie=prompt("Indomie 1 = 3000, Beli berapa?");
+        var btelur=prompt("Telur 1 = 1500, Beli berapa?");
+        var bkopi=prompt("Kopi 1 = 1000, Beli berapa?");
+        var bsusu=prompt("Susu 1 = 2500, Beli berapa?");
+
+        var tindomie=indomie*bindomie;
+        var ttelur=telur*btelur;
+        var tkopi=kopi*bkopi;
+        var tsusu=susu*bsusu;
+        var total = tindomie+ttelur+tkopi+tsusu;
+        
+        function bayar(){
+     var bayar = prompt("(arya rakha) Bayar")
+     var kembalian = bayar-total;
+    alert("bayar : "+ bayar +" total belanja : "+ total +" kembalian : " +kembalian)
+}
+
+        document.writeln("<table border=1>");
+       
+        document.writeln("<tr>");
+        document.writeln("<td>Nama barang</td> <td>Harga barang</td> <td>Jumlah beli</td> <td>Sub total</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td>Indomie</td> <td>"+indomie+"</td> <td>"+bindomie+"</td> <td>"+tindomie+"</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td>Telur</td> <td>"+telur+"</td> <td>"+btelur+"</td> <td>"+ttelur+"</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td>Kopi</td> <td>"+kopi+"</td> <td>"+bkopi+"</td> <td>"+tkopi+"</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td>Susu</td> <td>"+susu+"</td> <td>"+bsusu+"</td> <td>"+tsusu+"</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td colspan=3>total</td><td>"+total+"</td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td colspan=2></td><td colspan=2><button type='button' onclick=bayar()>Bayar</button></td>");
+        document.writeln("</tr>");
+
+        document.writeln("<tr>");
+        document.writeln("<td colspan=4>Muhammad arya rakha</td>");
+        document.writeln("</tr>");
+
+
+
+    </script>
+
+
+</head>
+<body>
+</body>
+</html>
